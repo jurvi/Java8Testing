@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="Deploy to WebLogic"  >
-<target name="Deploy to WebLogic">
-  <echo>Deploying to WebLogic</echo>
-  <mkdir dir="/Users/jjarvela/git/jee7test/../../vagrant-naali-weblogic/app"/>
-  <copy file="target/jee7test.war" tofile="/Users/jjarvela/git/jee7test/../kena2/vagrant-naali-weblogic/autodeploy/jee7test.war" overwrite="true"/>
-</target>
-</project>
