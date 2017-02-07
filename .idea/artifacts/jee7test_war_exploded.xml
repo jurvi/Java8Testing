@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jee7test:war exploded">
+    <output-path>$PROJECT_DIR$/target/jee7test</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jee7test" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax:javaee-api:6.0" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.12" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:6.0.13" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/jee7test/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="jee7test/web/Web" />
+    </root>
+  </artifact>
+</component>

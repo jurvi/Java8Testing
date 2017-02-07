@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet>-->
+    <!--<description>AtmosphereServlet</description>-->
+    <!--<servlet-name>AtmosphereServlet</servlet-name>-->
+    <!--<servlet-class>org.atmosphere.weblogic.AtmosphereWebLogicServlet</servlet-class>-->
+    <!--<init-param>-->
+    <!--<param-name>com.sun.jersey.config.property.packages</param-name>-->
+    <!--<param-value>fi.nbi.naali.realtime</param-value>-->
+    <!--</init-param>-->
+    <!--<init-param>-->
+    <!--<param-name>org.atmosphere.websocket.messageContentType</param-name>-->
+    <!--<param-value>application/json</param-value>-->
+    <!--</init-param>-->
+    <!--&lt;!&ndash; IMPORTANT: The following parameter disables Atmosphere analytics, which try to contact servers outside &ndash;&gt;-->
+    <!--&lt;!&ndash; The parameter name seems to vary between Atmosphere versions, be careful here &ndash;&gt;-->
+    <!--<init-param>-->
+    <!--<param-name>org.atmosphere.cpr.AtmosphereFramework.analytics</param-name>-->
+    <!--<param-value>false</param-value>-->
+    <!--</init-param>-->
+    <!--<load-on-startup>0</load-on-startup>-->
+    <!--<async-supported>true</async-supported>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>AtmosphereServlet</servlet-name>-->
+    <!--<url-pattern>/push/*</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+    <welcome-file-list>
+        <welcome-file>faces/index.xhtml</welcome-file>
+    </welcome-file-list>
+
+</web-app>
